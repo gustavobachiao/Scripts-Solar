@@ -7,10 +7,10 @@
 // @match        https://solar.defensoria.mg.def.br/atendimento/*
 // @grant        none
 // @run-at       document-end
-// @updateURL    https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-identificador-navegacao-impressao.user.js
-// @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-identificador-navegacao-impressao.user.js
-// @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
-// @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-identificador-navegacao-impressao.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-identificador-navegacao-impressao.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (function () {
