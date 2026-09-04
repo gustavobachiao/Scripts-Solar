@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Solar - Materializacao por Data
+// @name         Solar - Materialização por Data
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.0
 // @description  Materializa em um unico PDF apenas os documentos protocolados dentro do intervalo de datas informado.
