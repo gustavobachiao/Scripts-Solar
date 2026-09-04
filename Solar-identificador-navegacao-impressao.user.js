@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      3.2.0
 // @description  Exibe o numero do evento, permite copiar o numero, navegar entre documentos e abre o arquivo em nova aba para impressao garantida.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/atendimento/*
 // @grant        none
 // @run-at       document-end
