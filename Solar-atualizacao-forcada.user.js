@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Solar - Atualizacao Forcada de Processos
 // @namespace    https://solar.defensoria.mg.def.br/
-// @version      2.0.0
+// @version      2.0.1
 // @description  Forca a atualizacao do processo interceptando proativamente chamadas de rede da API nativa, garantindo sincronia independente da rota de navegacao.
 // @author       Defensoria Publica de Minas Gerais - Unidade de Passos
 // @match        https://solar.defensoria.mg.def.br/atendimento/*
