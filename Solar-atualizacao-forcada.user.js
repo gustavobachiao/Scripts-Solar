@@ -3,14 +3,14 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.0
 // @description  Forca a atualizacao do processo interceptando proativamente chamadas de rede da API nativa, garantindo sincronia independente da rota de navegacao.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade de Passos
 // @match        https://solar.defensoria.mg.def.br/atendimento/*
 // @grant        unsafeWindow
 // @run-at       document-start
-// @updateURL    https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-atualizacao-forcada.user.js
-// @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-atualizacao-forcada.user.js
-// @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
-// @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-atualizacao-forcada.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-atualizacao-forcada.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (() => {
