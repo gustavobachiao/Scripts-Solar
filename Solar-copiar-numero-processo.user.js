@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Solar - Copiar Numero de Processo
+// @name         Solar - Copiar Número de Processo
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.0
 // @description  Adiciona botao de copia ao lado dos numeros de processo nas telas inicial e de detalhes.
