@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      1.0.0
 // @description  Filtro em tempo real para eventos e documentos na Linha do Tempo do Solar.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
