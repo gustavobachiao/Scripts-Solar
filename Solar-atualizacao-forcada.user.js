@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Solar - Atualizacao Forcada de Processos
+// @name         Solar - Atualizaçao Forcada de Processos
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.1
 // @description  Forca a atualizacao do processo interceptando proativamente chamadas de rede da API nativa, garantindo sincronia independente da rota de navegacao.
