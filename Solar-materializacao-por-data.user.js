@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.0
 // @description  Materializa em um unico PDF apenas os documentos protocolados dentro do intervalo de datas informado.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://*.defensoria.mg.def.br/*
 // @grant        GM_addStyle
 // @grant        unsafeWindow
