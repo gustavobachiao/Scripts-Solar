@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      1.0.0
 // @description  Pinta de roxo o numero do processo ao clicar nele ou no botao de copiar, marcando visualmente o que ja foi visitado.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
