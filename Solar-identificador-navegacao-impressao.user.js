@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Solar - Identificador, Navegacao e Impressao Rapida
+// @name         Solar - Identificador, Navegação e Impressão Rápida
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      3.2.0
 // @description  Exibe o numero do evento, permite copiar o numero, navegar entre documentos e abre o arquivo em nova aba para impressao garantida.
