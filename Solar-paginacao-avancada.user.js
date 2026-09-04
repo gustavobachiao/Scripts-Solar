@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Solar - Paginacao Avancada
+// @name         Solar - Paginação Avançada
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      1.0.0
 // @description  Expande a paginacao para ate 20 botoes e adiciona campo de salto direto para uma pagina especifica.
