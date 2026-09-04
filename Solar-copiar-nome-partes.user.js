@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      1.0.0
 // @description  Adiciona botao de copia ao lado do nome das partes na tela inicial e nos detalhes do processo.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
