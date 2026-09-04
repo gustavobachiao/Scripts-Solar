@@ -3,7 +3,7 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.1.0
 // @description  Destaca prazos criticos, proximos e expirados nas listas do Solar, com painel de resumo no topo da tabela.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        GM_addStyle
 // @run-at       document-idle
