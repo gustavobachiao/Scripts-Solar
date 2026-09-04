@@ -7,10 +7,10 @@
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        GM_addStyle
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-destacar-prazos.user.js
-// @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-destacar-prazos.user.js
-// @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
-// @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-destacar-prazos.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-destacar-prazos.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (() => {
