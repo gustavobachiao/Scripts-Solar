@@ -3,14 +3,14 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      2.0.0
 // @description  Adiciona botao de copia ao lado dos numeros de processo nas telas inicial e de detalhes.
-// @author       Defensoria Publica de Minas Gerais
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
 // @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
-// @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-copiar-numero-processo.user.js
-// @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
-// @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (function() {
