@@ -7,7 +7,7 @@
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-copiar-numero-processo.user.js
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
 // @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-copiar-numero-processo.user.js
 // @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
 // @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
