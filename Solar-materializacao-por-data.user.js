@@ -8,10 +8,10 @@
 // @grant        GM_addStyle
 // @grant        unsafeWindow
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-materializacao-por-data.user.js
-// @downloadURL  https://raw.githubusercontent.com/SEU-USUARIO/Scripts-Solar/main/solar-materializacao-por-data.user.js
-// @homepageURL  https://github.com/SEU-USUARIO/Scripts-Solar
-// @supportURL   https://github.com/SEU-USUARIO/Scripts-Solar/issues
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-materializacao-por-data.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-materializacao-por-data.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (() => {
