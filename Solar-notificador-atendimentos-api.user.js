@@ -3,7 +3,7 @@
 // @namespace    solar-tampermonkey-utils
 // @version      1.1.0
 // @description  Alerta PERMANENTE (balão + som + notificação do SO) em QUALQUER aba aberta do Solar quando surge um novo atendimento na fila "Liberados", com nome do assistido e defensoria, filtrável por defensoria (opcional, desativado por padrão). Versão otimizada: consulta a API JSON diretamente (fetch), sem iframe/Angular - mais leve e rápida que a versão original. Script independente, pode rodar ao lado da versão via iframe para comparação.
-// @author       você
+// @author       Defensoria Publica de Minas Gerais - Unidade de Passos
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -12,6 +12,10 @@
 // @grant        GM_addStyle
 // @grant        GM_registerMenuCommand
 // @run-at       document-idle
+// @updateURL    https://github.com/gustavobachiao/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
+// @downloadURL  https://github.com/gustavobachiao/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (() => {
