@@ -12,8 +12,8 @@
 // @grant        GM_addStyle
 // @grant        GM_registerMenuCommand
 // @run-at       document-idle
-// @updateURL    https://github.com/gustavobachiao/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
-// @downloadURL  https://github.com/gustavobachiao/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
+// @updateURL    https://raw.githubusercontent.com/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
+// @downloadURL  https://raw.githubusercontent.com/Scripts-Solar/main/Solar-notificador-atendimentos-api.user.js
 // @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
 // @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
