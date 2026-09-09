@@ -415,11 +415,40 @@
       body: JSON.stringify({ data: new Date().toISOString() }),
     });
 
+    // Se a sessão expirou, o Django tipicamente redireciona para a tela de
+    // login, e o fetch() segue esse redirecionamento automaticamente -
+    // terminando em status 200 com HTML no lugar do JSON esperado.
+    // resposta.redirected é a forma mais direta de detectar isso, sem
+    // depender de sniffar o conteúdo.
+    if (resposta.redirected) {
+      const erro = new Error(`A requisição foi redirecionada para "${resposta.url}" - a sessão provavelmente expirou.`);
+      erro.sessaoExpirada = true;
+      throw erro;
+    }
+
     if (!resposta.ok) {
       throw new Error(`Resposta HTTP ${resposta.status} ao consultar a API de atendimentos.`);
     }
 
-    const bruto = await resposta.json();
+    // Segunda camada de defesa: mesmo sem redirecionamento detectado (ex.:
+    // um proxy/gateway que devolve uma página de erro com status 200),
+    // confirmar que o Content-Type é realmente JSON antes de tentar o parse.
+    const contentType = resposta.headers.get('content-type') ?? '';
+    if (!contentType.includes('application/json')) {
+      const erro = new Error(`Resposta com Content-Type inesperado ("${contentType || '(vazio)'}") em vez de JSON - a sessão provavelmente expirou, ou a API mudou de formato.`);
+      erro.sessaoExpirada = true;
+      throw erro;
+    }
+
+    let bruto;
+    try {
+      bruto = await resposta.json();
+    } catch (error) {
+      const erro = new Error(`Falha ao interpretar a resposta como JSON (${error.message}) - a sessão provavelmente expirou.`);
+      erro.sessaoExpirada = true;
+      throw erro;
+    }
+
     if (!Array.isArray(bruto)) {
       throw new Error('Resposta da API não é uma lista (formato pode ter mudado desde a última verificação).');
     }
@@ -455,6 +484,31 @@
   }
 
   /* ============================================================
+   * MÓDULO: Aviso de sessão expirada
+   * ============================================================ */
+  let avisoSessaoExpiradaAtivo = false; // evita repetir o aviso a cada ciclo de 30s
+
+  function avisarSessaoExpirada() {
+    if (avisoSessaoExpiradaAtivo) return;
+    avisoSessaoExpiradaAtivo = true;
+
+    showToast({
+      title: '⚠️ Sessão expirada',
+      linhasHtml: '<span class="solar-notif-api-linha">O notificador parou de funcionar. Faça login novamente no Solar nesta aba.</span>',
+      onClick: () => window.open(CONFIG.ATENDIMENTO_PAGINA_URL, '_blank'),
+    });
+
+    if (typeof GM_notification === 'function') {
+      GM_notification({
+        title: '⚠️ Solar - Sessão expirada',
+        text: 'O notificador de atendimentos (API) parou de funcionar porque a sessão expirou. Faça login novamente no Solar.',
+        timeout: 20000,
+        onclick: () => window.open(CONFIG.ATENDIMENTO_PAGINA_URL, '_blank'),
+      });
+    }
+  }
+
+  /* ============================================================
    * MÓDULO: Ciclo de verificação
    * ============================================================ */
   let verificacaoEmAndamento = false;
@@ -466,6 +520,7 @@
 
     try {
       const dados = await buscarDadosLiberadosViaAPI();
+      avisoSessaoExpiradaAtivo = false; // sucesso: reabilita o aviso para uma futura falha
       const chavesAtuais = construirChavesAtuais(dados.atendimentos);
 
       if (GM_getValue(CONFIG.STORAGE_FILTRO_ATIVO, false)) {
@@ -500,6 +555,9 @@
       }
     } catch (error) {
       log.warn('Falha ao verificar novos atendimentos', error);
+      if (error?.sessaoExpirada) {
+        avisarSessaoExpirada();
+      }
     } finally {
       verificacaoEmAndamento = false;
     }
