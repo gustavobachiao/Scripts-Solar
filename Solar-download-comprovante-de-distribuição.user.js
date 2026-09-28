@@ -7,8 +7,8 @@
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/solar-download-comprovante-de-distribuição.user.js
-// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/solar-download-comprovante-de-distribuição.user.js
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-download-comprovante-de-distribuição.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-download-comprovante-de-distribuição.user.js
 // @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
 // @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
