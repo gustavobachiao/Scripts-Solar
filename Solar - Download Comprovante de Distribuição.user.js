@@ -3,12 +3,12 @@
 // @namespace    https://solar.defensoria.mg.def.br/
 // @version      1.0.0
 // @description  Adiciona botao de download de comprovantes de distribuição e protocolo.
-// @author       Defensoria Publica de Minas Gerais - Unidade Passos
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos 
 // @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
 // @run-at       document-idle
-// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
-// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Download-Comprovante-de-Distribuição.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Download-Comprovante-de-Distribuição.user.js
 // @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
 // @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
