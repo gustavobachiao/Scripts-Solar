@@ -1,12 +1,16 @@
 // ==UserScript==
 // @name         Solar - Download Comprovante de Distribuição
 // @namespace    https://solar.defensoria.mg.def.br/
-// @version      1.3.0
-// @description  Adiciona um botão de download do "Comprovante de Distribuição" (Recibo) direto na listagem de Peticionamentos do Solar, já renomeando o PDF para "Comprovante de Distribuição - [CNJ] (Protocolo Solar) - [data].pdf". Reaproveita a checkbox nativa da 1ª coluna (sem duplicar) para o download em lote, sempre disponível nas linhas Protocolado, com trava mútua contra a checkbox nativa de peticionamentos Aguardando (e de qualquer outra situação).
-// @author       Guilherme
-// @match        https://solar.defensoria.mg.def.br/processo/peticionamento/buscar/*
-// @run-at       document-idle
+// @version      1.0.0
+// @description  Adiciona botao de download de comprovantes de distribuição e protocolo.
+// @author       Defensoria Publica de Minas Gerais - Unidade Passos
+// @match        https://solar.defensoria.mg.def.br/*
 // @grant        none
+// @run-at       document-idle
+// @updateURL    https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
+// @downloadURL  https://raw.githubusercontent.com/gustavobachiao/Scripts-Solar/main/Solar-copiar-numero-processo.user.js
+// @homepageURL  https://github.com/gustavobachiao/Scripts-Solar
+// @supportURL   https://github.com/gustavobachiao/Scripts-Solar/issues
 // ==/UserScript==
 
 (() => {
